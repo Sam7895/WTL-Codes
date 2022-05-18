@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Factorial</h1>
+
+<p>Click the button to ask for your favorite drink.</p>
+
+<button onclick="myFunction()">Enter Value</button>
+
+<p id="fact"></p>
+
+<script>
+function myFunction() {
+  let fac;
+  let input = prompt("Enter Number");
+  switch(input) {
+    case "Coca-Cola":
+      fac = "Excellent choice. Coca-Cola is good for your soul.";
+      break;
+    case "Pepsi":
+      fac = "Pepsi is my favorite too!";
+      break;
+    case "Sprite":
+      fac = "Really? Are you sure the Sprite is your favorite?";
+      break;
+    default:
+      fac = "I have never heard of that one..";
+  }
+  document.getElementById("fact").innerHTML = number;
+}
+</script>
+
+</body>
+</html>
